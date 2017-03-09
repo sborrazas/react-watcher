@@ -45,7 +45,7 @@ export default connect(UserDetail);
 ```
 
 **Note:** The prop to watch can be any value accepted by
-[Lodash _.get function](https://lodash.com/docs/4.17.4#get). Examples:
+[Lodash get function](https://lodash.com/docs/4.17.4#get). Examples:
 `'params.id'`, `'users[0].id'`, `['users', 0, 'id']`.
 
 ## API
@@ -84,7 +84,7 @@ class UsersList extends React.Component {
   componentWillMount() {
     this.props.watch('activeFilter', (activeFilter) => {
       alert('Active filter has changed!');
-    })
+    });
   }
 }
 
